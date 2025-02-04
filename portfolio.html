@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with Animations</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <ul class="topnav">
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li class="right"><a href="#contact">Contact</a></li>
+  </ul>
+
+
+
+  <div id="about" class="section">
+    <h2>About Me</h2>
+    <div class="content">
+        <div class="text-container">
+          <header>
+            <h1>Hi, I'm Arvind M</h1>
+            <span class="badge bg-warning">Full Stack Developer</span><br>
+            <p>Pursuing Computer Science Engineering at Kongu Engineering College with a CGPA of 7.74.</p>
+          </header>
+          <section>
+            <h2>About Me</h2>
+            <p>My passions lie in Full Stack Development.I've participated in many hackathons and coding competitions.I have won 3rd prize in paper presentation and 2nd prize in ByteBash HackerRank coding competition. I completed internships at  Generative AI Consortium and SystimaNX IT Solutions Private Limited!, gaining valuable Machine learning experience. I am an active member of NCC</p>
+        </p>
+          </section>
+        </div>
+        <img src="https://avatars.githubusercontent.com/u/126601502?v=4" alt="Photo of Arvind M" id="img1">
+      </div>
+      
+   
+
+  <div id="projects" class="section">
+    <h2>Projects</h2>
+    <p>Check out my projects below.</p>
+  </div>
+
+  <div id="skills" class="section">
+    <h2>Skills</h2>
+    <p>Here are some of my skills.</p>
+  </div>
+
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Get in touch with me.</p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.section');
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+
+      document.querySelectorAll('ul.topnav li a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
