@@ -1,82 +1,516 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navbar with Animations</title>
+  <title>Responsive Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
   <link rel="stylesheet" href="portfolio.css">
 </head>
-<body>
+<script>
+  const data = [
+  {
+    image: 'https://3.imimg.com/data3/PJ/LO/MY-17250225/the-seminar-hall-500x500.png',
+    title: 'IT',
+    description: 'IT Park library',
+  },
+  {
+    image: 'https://thumbs.dreamstime.com/b/conference-hall-29526775.jpg',
+    title: 'CSE',
+    description: 'CSE Seminar hall',
+  },
+  {
+    image: 'https://thumbs.dreamstime.com/b/conference-hall-7641763.jpg',
+    title: 'MECH',
+    description: 'Mech Seminar hall',
+  },
+];
 
-  <ul class="topnav">
+</script>
+<body>
+  <div id="fix">
+ 
+   <ul class="topnav">
     <li><a href="#about">About Me</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li class="right"><a href="#contact">Contact</a></li>
+    <li><a href="#contact">Resume</a></li>
+    <li><a href="#connect">Connect</a></li>
   </ul>
-
-
+</div>
 
   <div id="about" class="section">
-    <h2>About Me</h2>
+   <h2 class="smallsize">About Me</h2>
     <div class="content">
         <div class="text-container">
           <header>
             <h1>Hi, I'm Arvind M</h1>
             <span class="badge bg-warning">Full Stack Developer</span><br>
-            <!-- <p>Pursuing Computer Science Engineering at Kongu Engineering College with a CGPA of 7.74.</p> -->
-         
+            <h2>About Me</h2>
+            <p>My passions lie in Full Stack Development. I've participated in many hackathons and coding competitions. I have won 3rd prize in paper presentation and 2nd prize in ByteBash HackerRank coding competition. I completed internships at Generative AI Consortium and SystimaNX IT Solutions Private Limited!, gaining valuable Machine learning experience. I am an active member of NCC.</p>
         </div>
         <img src="https://avatars.githubusercontent.com/u/126601502?v=4" alt="Photo of Arvind M" id="img1">
-      </div>
-      
-   
-
-  <div id="projects" class="section">
-    <h2>Projects</h2>
-    
+    </div>
   </div>
 
-  <div id="skills" class="section">
-    <h2>Skills</h2>
+  <div id="projects" class="section" >
+    <h2 id="pro">Projects</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="color">    
+               <div className="container-fluid mt-3 m-1" id="containerism">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div className="card d-flex justify-content-center">
+                  <div className="image-container" id="image">
+                    <img src="flight1.png" id="hi" className="card-img-top" alt="no" />
+                    <a href="https://github.com/Arvind22cse/food-receipe-project.git" className="btn btn-primary"> <h5 id="h1">Click here</h5></a>
+                  </div>
+   
+                    <!-- 
+                      Github
+                    </a> -->
+                  </div>
+                  <div className="card-body" id="cb">
+                    FLight Ticket Prediction (ML)
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="col">
+          <div class="color">    
+               <div className="container-fluid mt-3 m-1" id="containerism">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div className="card d-flex justify-content-center">
+                  <div className="image-container" id="image">
+                    <img src="hostal.png" id="hi" className="card-img-top" alt="no" />
+                    <a href="https://github.com/Arvind22cse/food-receipe-project.git" className="btn btn-primary"> <h5 id="h1">Click here</h5></a>
+                  </div>
+   
+                    <!-- 
+                      Github
+                    </a> -->
+                  </div>
+                  <div className="card-body" id="cb">
+                    Hostal Service Booking (MERN Stack)
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="col">
+          <div class="color">    
+               <div className="container-fluid mt-3 m-1" id="containerism">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div className="card d-flex justify-content-center">
+                  <div className="image-container" id="image">
+                    <img src="product.png" id="hi" className="card-img-top" alt="no" />
+                    <a href="https://github.com/Arvind22cse/food-receipe-project.git" className="btn btn-primary"> <h5 id="h1">Click here</h5></a>
+                  </div>
+   
+                    <!-- 
+                      Github
+                    </a> -->
+                  </div>
+                  <div className="card-body" id="cb">
+                    Product Management(MERN Stack)
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        
+        
     
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="color">    
+             <div className="container-fluid mt-3 m-1" id="containerism">
+          <div className="row justify-content-center text-center">
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div className="card d-flex justify-content-center">
+                <div className="image-container" id="image">
+                  <img src="p1.png" id="hi" className="card-img-top" alt="no" />
+                  <a href="https://github.com/Arvind22cse/food-receipe-project.git" className="btn btn-primary"> <h5 id="h1">Click here</h5></a>
+                </div>
+ 
+                  <!-- 
+                    Github
+                  </a> -->
+                </div>
+                <div className="card-body" id="cb">
+                  Food Receipe Application
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+      <div class="col">
+        <div class="color">    
+             <div className="container-fluid mt-3 m-1" id="containerism">
+          <div className="row justify-content-center text-center">
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div className="card d-flex justify-content-center">
+                <div className="image-container" id="image">
+                  <img src="foodordering.png" id="hi" className="card-img-top" alt="no" />
+                  <a href="https://github.com/Arvind22cse/foodordering-using-python.git" className="btn btn-primary"> <h5 id="h1">Click here</h5></a>
+                </div>
+ 
+                  <!-- 
+                    Github
+                  </a> -->
+                </div>
+                <div className="card-body" id="cb">
+                  Food Ordering Application (Flask)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+      <div class="col">
+        <div class="color">    
+             <div className="container-fluid mt-3 m-1" id="containerism">
+          <div className="row justify-content-center text-center">
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div className="card d-flex justify-content-center">
+                <div className="image-container" id="image">
+                  <img src="workforce.png" id="hi" className="card-img-top" alt="no" />
+                  <a href="https://github.com/Arvind22cse/WEB_FULLSTACK.git" className="btn btn-primary"> <h5 id="h1">Click here</h5></a>
+                </div>
+ 
+                  <!-- 
+                    Github
+                  </a> -->
+                </div>
+                <div className="card-body" id="cb">
+                  Work Force Management(Full Stack)
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="color">    
+         <div className="container-fluid mt-3 m-1" id="containerism">
+      <div className="row justify-content-center text-center">
+        <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div className="card d-flex justify-content-center">
+            <div className="image-container" id="image">
+              <img src="whatsapp.png" id="hi" className="card-img-top" alt="no" />
+              <a href="https://github.com/Arvind22cse/flutter-.git" className="btn btn-primary"> <h5 id="h1">Click here</h5></a>
+            </div>
+
+            </div>
+            <div className="card-body" id="cb">
+              Whatsapp Clone(Flutter)
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  <div class="col">
+    <div class="color">    
+         <div className="container-fluid mt-3 m-1" id="containerism">
+      <div className="row justify-content-center text-center">
+        <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div className="card d-flex justify-content-center">
+            <div className="image-container" id="image">
+              <img src="pong.png" id="hi" className="card-img-top" alt="no" />
+              <a href="https://github.com/Arvind22cse/python-game-development.git" className="btn btn-primary"> <h5 id="h1">Click here</h5></a>
+            </div>
+
+            </div>
+            <div className="card-body" id="cb">
+              Classic Pong game(Python)
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  <div class="col">
+    <div class="color">    
+         <div className="container-fluid mt-3 m-1" id="containerism">
+      <div className="row justify-content-center text-center">
+        <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div className="card d-flex justify-content-center">
+            <div className="image-container" id="image">
+              <img src="image.png" id="hi" className="card-img-top" alt="no" />
+              <a href="https://arvind22cse.github.io/TIC_TAC_TOE_GAME_PRODIGY_INTERNSHIP/" className="btn btn-primary"> <h5 id="h1">Click here</h5></a>
+            </div>
+
+            </div>
+            <div className="card-body" id="cb">
+              Tic Tac Toe (Javascript)
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <div id="skills" class="section">
+    <h2>SKILLS</h2><br><br>
+    <h1>Languages</h1>
+    <div class="row">
+     
+      <div class="col">
+        
+    <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="55" data-progress-color="crimson" data-bg-color="black">
+      <div class="inner-circle"></div>
+      <p class="percentage">0%</p>
+    </div>
+    <h1>C</h1>
+    </div>
+    <div class="col">
+
+    <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="40" data-progress-color="crimson" data-bg-color="black">
+      <div class="inner-circle"></div>
+      <p class="percentage">0%</p>
+    </div>
+    <h1>Java</h1>
+    </div>
+    <div class="col">
+
+    <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="60" data-progress-color="crimson" data-bg-color="black">
+      <div class="inner-circle"></div>
+      <p class="percentage">0%</p>
+    </div>
+    <h1>Python</h1>
+    </div>
+    <div class="col">
+      <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="65" data-progress-color="crimson" data-bg-color="black">
+        <div class="inner-circle"></div>
+        <p class="percentage">0%</p>
+      </div>
+      <h1>Javascript</h1>
+      </div>
+    </div>
+    <br><br>
+    <h1>Frameworks</h1>
+    <div class="row">
+
+      <div class="col">
+    <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="70" data-progress-color="crimson" data-bg-color="black">
+      <div class="inner-circle"></div>
+      <p class="percentage">0%</p>
+      
+    </div>
+    <h1>React</h1>
+    </div>
+    <div class="col">
+    <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="85" data-progress-color="crimson" data-bg-color="black">
+      <div class="inner-circle"></div>
+      <p class="percentage">0%</p>
+     
+    </div>
+    <h1>Express</h1>
+    </div>
+    <div class="col">
+    <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="30" data-progress-color="crimson" data-bg-color="black">
+      <div class="inner-circle"></div>
+      <p class="percentage">0%</p>
+      
+    </div>
+    <h1>Flask</h1>
+    </div> 
+    </div>
+    <br><br>
+    <h1>Storage</h1>
+    <div class="row">
+    <div class="col">
+
+    <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="90" data-progress-color="crimson" data-bg-color="black">
+      <div class="inner-circle"></div>
+      <p class="percentage">0%</p>
+    </div>
+    <h1>MangoDB</h1>
+    </div>
+    <div class="col">
+
+      <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+        <div class="inner-circle"></div>
+        <p class="percentage">0%</p>
+      </div>
+      <h1>Oracle</h1>
+      </div>
+    <div class="col">
+    <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+      <div class="inner-circle"></div>
+      <p class="percentage">0%</p>
+    </div>
+    <h1>PostgreSQL</h1>
+    </div>
+    </div>
+    <br><br>
+    <h1>Cloud</h1>
+    <div class="row">
+    <div class="col">
+
+    <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="90" data-progress-color="crimson" data-bg-color="black">
+      <div class="inner-circle"></div>
+      <p class="percentage">0%</p>
+    </div>
+    <h1>AWS </h1>
+    <h1>(S3,EC2,EBS)</h1>
+    </div>
+    <div class="col">
+
+    <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="90" data-progress-color="crimson" data-bg-color="black">
+      <div class="inner-circle"></div>
+      <p class="percentage">0%</p>
+    </div>
+    <h1>Vercel</h1>
+    </div>
+    <div class="col">
+
+      <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="60" data-progress-color="crimson" data-bg-color="black">
+        <div class="inner-circle"></div>
+        <p class="percentage">0%</p>
+      </div>
+      <h1>Render</h1>
+      </div>
+    </div>
+    <br><br>
+    <h1>Tools</h1>
+    <div class="row">
+      <div class="col">
+  
+      <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="95" data-progress-color="crimson" data-bg-color="black">
+        <div class="inner-circle"></div>
+        <p class="percentage">0%</p>
+      </div>
+      <h1>Github</h1>
+      </div>
+      <div class="col">
+  
+      <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+        <div class="inner-circle"></div>
+        <p class="percentage">0%</p>
+      </div>
+      <h1>Figma</h1>
+      </div>
+      <div class="col">
+  
+        <div id ="st" class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="80" data-progress-color="crimson" data-bg-color="black">
+          <div class="inner-circle"></div>
+          <p class="percentage">0%</p>
+        </div>
+        <h1>Postman</h1>
+        </div>
+      </div>
   </div>
 
   <div id="contact" class="section">
-    <h2>Contact</h2>
-   
+    <h2>Resume</h2>
+    <img src="Arvind_M_CV.jpg" alt="error" id="resume">
+  <a href="https://drive.google.com/file/d/1sU5vU90mjJd_9aqwmpLkhbb8OCWp3JOT/view?usp=drive_link"><button type="submit" id="download">Download</button></a>  
+  </div>
+  
+  <div id="connect" class="section">
+<h1>Connect with me</h1>
+<div class="row"><div class="col">
+<div class="card" class="lndiv">
+  <img src="LinkedIn_logo_initials.png" alt="error" class="ln">
+</div>
+</div>
+<div  class="col">
+<div class="card" class="lndiv2">
+  <img src="gt.png" alt="error" class="ln2">
+</div>
+</div></div>
   </div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const sections = document.querySelectorAll('.section');
-
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
           }
         });
-      }, {
-        threshold: 0.1
-      });
-
-      sections.forEach(section => {
-        observer.observe(section);
-      });
+      }, { threshold: 0.1 });
+      sections.forEach(section => { observer.observe(section); });
 
       document.querySelectorAll('ul.topnav li a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
           e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
+          document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
         });
       });
     });
-  </script>
 
-</body>
-</html>
+    const circularProgress = document.querySelectorAll(".circular-progress");
+
+Array.from(circularProgress).forEach((progressBar) => {
+  const progressValue = progressBar.querySelector(".percentage");
+  const innerCircle = progressBar.querySelector(".inner-circle");
+  let startValue = 0,
+    endValue = Number(progressBar.getAttribute("data-percentage")),
+    speed = 50,
+    progressColor = progressBar.getAttribute("data-progress-color");
+
+  const progress = setInterval(() => {
+    startValue++;
+    progressValue.textContent = `${startValue}%`;
+    progressValue.style.color = `${progressColor}`;
+
+    innerCircle.style.backgroundColor = `${progressBar.getAttribute(
+      "data-inner-circle-color"
+    )}`;
+
+    progressBar.style.background = `conic-gradient(${progressColor} ${
+      startValue * 3.6
+    }deg,${progressBar.getAttribute("data-bg-color")} 0deg)`;
+    if (startValue === endValue) {
+      clearInterval(progress);
+    }
+  }, speed);
+});
+  </script>
